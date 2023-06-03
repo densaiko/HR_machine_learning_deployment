@@ -18,7 +18,7 @@ def load_data(data):
 
 def run_eda_app():
     st.subheader("From Exploratory Data Analysis")
-    df = load_data("churn_telco.csv")
+    df = load_data("human_capital.csv")
     df_descriptive = load_data("type_null.csv")
     age_viz = load_data("age_viz_composition.csv")
     # st.dataframe(df)
@@ -33,8 +33,8 @@ def run_eda_app():
         with st.expander("Descriptive Summary"):
             st.dataframe(df.describe())
 
-        with st.expander("Class Distribution"):
-            st.dataframe(df["Churn"].value_counts())
+        with st.expander("Promotion Distribution"):
+            st.dataframe(df["is_promoted"].value_counts())
 
         with st.expander("Gender Distribution"):
             st.dataframe(df["gender"].value_counts())
@@ -60,17 +60,17 @@ def run_eda_app():
                 st.plotly_chart(p1, use_container_width=True)
             
             # for Class Distribution
-            with st.expander("Dist Plot of Internet Service"):
+            with st.expander("Dist Plot of Education"):
                 fig = plt.figure()
-                sns.countplot(x=df['InternetService'])
+                sns.countplot(x=df['education'])
                 st.pyplot(fig)
 
         with col2:
             with st.expander("Gender Distribution"):
                 st.dataframe(gen_df)
 
-            with st.expander("Internet Service Distribution"):
-                st.dataframe(df['InternetService'].value_counts().to_frame())
+            with st.expander("Education Distribution"):
+                st.dataframe(df['education'].value_counts().to_frame())
 
         with st.expander("Frequency Distribution of Age"):
             p2 = px.bar(age_viz, x='age_viz', y='values', text='label')
