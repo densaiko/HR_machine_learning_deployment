@@ -2,7 +2,7 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://densaiko-hr-machine-learning-deployment-app-wcaoyj.streamlit.app/)
 
 ### Steps
-[!](sharing_streamlit_deployment.png)
+![](sharing_streamlit_deployment.png)
 1. You have to prepare
    - Github Account: where you will host the app
    - Streamlit: where you deploy your app
