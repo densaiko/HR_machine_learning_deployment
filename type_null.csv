@@ -1,0 +1,13 @@
+,feature,Columns Type,Amount of Null Values,Percentage of Null Values
+0,department,object,0,0.0
+1,region,object,0,0.0
+2,education,object,2409,4.4
+3,gender,object,0,0.0
+4,recruitment_channel,object,0,0.0
+5,no_of_trainings,int64,0,0.0
+6,age,int64,0,0.0
+7,previous_year_rating,float64,4124,7.52
+8,length_of_service,int64,0,0.0
+9,awards_won,int64,0,0.0
+10,avg_training_score,float64,2560,4.67
+11,is_promoted,int64,0,0.0
