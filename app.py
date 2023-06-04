@@ -28,18 +28,17 @@ def main():
     # st.title("Main App")
     stc.html(html_temp)
 
-    menu = ["Home","EDA","ML","About"]
+    menu = ["Home","Machine Learning","Exploratory Data Analysis"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
         st.subheader("Home")
         st.markdown(desc_temp, unsafe_allow_html=True)
-    elif choice == "EDA":
-        run_eda_app()
-    elif choice == "ML":
+    elif choice == "Machine Learning":
         run_ml_app()
-    else:
-        st.subheader("About")
+    elif choice == "Exploratory Data Analysis":
+        run_eda_app()
+    
 
 if __name__ == '__main__':
     main()
