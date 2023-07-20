@@ -8,7 +8,7 @@ from ml_app import run_ml_app
 
 html_temp = """
             <div style="background-color:#3872fb;padding:10px;border-radius:10px">
-		    <h1 style="color:white;text-align:center;">Employee Promotion Prediction App </h1>
+		    <h1 style="color:white;text-align:center;">Forum Tentor Indonesia </h1>
 		    <h4 style="color:white;text-align:center;">HR Team </h4>
 		    </div>
             """
